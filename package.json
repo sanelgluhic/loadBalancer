@@ -1,0 +1,26 @@
+{
+  "name": "balanceyourload",
+  "version": "1.0.0",
+  "description": "I dag skal vi kigge på load balancing, der samtidig er jeres næste aflevering. Vi skal lave en simpel load balancer, baseret på Round Robin-metoden, der ligeligt uddeler requests til serverne.\r Vi gør det her med en http-server, og bruger derfor to komponenter til at bygge den: **node-http-proxy** (https://github.com/nodejitsu/node-http-proxy), som er en programmerbar HTTP-proxy bibliotek og **seaport**, der er en service register og kan bruges til at dele requests ud til en given port.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seaport": "seaport",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "seaport": "^2.0.9"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIS-2020/loadBalancer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DIS-2020/loadBalancer/issues"
+  },
+  "homepage": "https://github.com/DIS-2020/loadBalancer#readme"
+}
